@@ -12,7 +12,7 @@ pipeline {
 	                 }}
 		stage('Deployment') {
 		    steps {
-			sh 'cp target/docker.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.85/webapps'
+			sh 'cp target/docker-repo.war /home/ishika/Documents/devops_software/apache-tomcat-9.0.85/webapps'
 			}}
 		stage('Docker build') {
 		    steps {
